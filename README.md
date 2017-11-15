@@ -1,7 +1,7 @@
 # SendCloud API Integration Example
 
 There are various ways to integrate the SendCloud shipping solution with your own platform.  
-The [API documentation][api_docs] gives a complete overview of the possibilities.  
+The [API documentation][sc_api_docs] gives a complete overview of the possibilities.  
 This repository should provide you clear and understandable examples on how you can integrate SendCloud.
 
 ## Setting up the API credentials
@@ -23,7 +23,7 @@ You are going to need those credentials to authenticate with the API.
 
 ## Examples
 Below you can find the links to Python files which show how to use the API. 
-The scripts are written in Python 3 and require Requests to be installed.  
+The scripts are written in Python 3 and require [Requests][requests_docs] to be installed.  
 You can easily inspect and learn more about the code. 
 
 Running the scripts to interact with the API simple. Take the following create parcel example:
@@ -54,5 +54,7 @@ Once your integration is working you can check with paid shipping methods, but m
 deadline otherwise you have to pay for this label on the next invoice.
 [More info about cancelling a shipment.][cancel_shipment]
 
-[api_docs]: https://docs.sendcloud.sc/api/v2/index.html
+
+[sc_api_docs]: https://docs.sendcloud.sc/api/v2/index.html
+[requests_docs]: http://docs.python-requests.org/en/master/
 [cancel_shipment]: https://support.sendcloud.com/english/settings/how-do-i-cancel-my-shipment

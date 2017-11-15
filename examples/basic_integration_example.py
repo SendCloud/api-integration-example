@@ -42,7 +42,7 @@ def create_parcel(public_key, secret_key, partner_id=None):
         auth=(public_key, secret_key,)
     )
 
-    # You should get a HTTP 200 response,
+    # response.status_code should be HTTP 200,
     # if this is not the case. Throw a exception.
     response.raise_for_status()
 
@@ -78,6 +78,8 @@ def cancel_parcel(public_key, secret_key, partner_id=None):
     )
 
     try:
+        # response.status_code should be HTTP 200,
+        # if this is not the case. Throw a exception.
         response.raise_for_status()
     except requests.exceptions.HTTPError as e:
         if e.response.status_code not in [
